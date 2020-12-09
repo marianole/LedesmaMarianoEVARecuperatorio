@@ -1,6 +1,6 @@
 package ar.edu.unlam.pb2.eva03;
 
-public class Acuatico extends ObjetoBasico{
+public class Acuatico extends Vehiculo {
 
     public Double profundidad;
 

@@ -2,12 +2,12 @@ package ar.edu.unlam.pb2.eva03;
 
 import java.util.Objects;
 
-public class ObjetoBasico {
+public class Vehiculo {
 
     public Integer codigoIdentificador;
     public String nombre;
 
-    public ObjetoBasico(Integer codigoIdentificador, String nombre) {
+    public Vehiculo(Integer codigoIdentificador, String nombre) {
         this.codigoIdentificador = codigoIdentificador;
         this.nombre = nombre;
     }
@@ -32,8 +32,8 @@ public class ObjetoBasico {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ObjetoBasico objetoBasico = (ObjetoBasico) o;
-        return codigoIdentificador.equals(objetoBasico.codigoIdentificador);
+        Vehiculo vehiculo = (Vehiculo) o;
+        return codigoIdentificador.equals(vehiculo.codigoIdentificador);
     }
 
     @Override

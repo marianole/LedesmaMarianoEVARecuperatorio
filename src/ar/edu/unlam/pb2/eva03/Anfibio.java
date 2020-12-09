@@ -3,7 +3,7 @@ package ar.edu.unlam.pb2.eva03;
 import interfaces.IAcuatico;
 import interfaces.ITerrestre;
 
-public class Anfibio extends ObjetoBasico implements IAcuatico, ITerrestre {
+public class Anfibio extends Vehiculo implements IAcuatico, ITerrestre {
 
     public Double velocidad;
     public Double profundidad;

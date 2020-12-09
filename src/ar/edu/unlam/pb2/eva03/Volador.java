@@ -1,6 +1,6 @@
 package ar.edu.unlam.pb2.eva03;
 
-public class Volador extends ObjetoBasico{
+public class Volador extends Vehiculo {
 
     public Double altura;
 

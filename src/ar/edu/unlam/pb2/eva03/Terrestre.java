@@ -1,6 +1,6 @@
 package ar.edu.unlam.pb2.eva03;
 
-public class Terrestre extends ObjetoBasico {
+public class Terrestre extends Vehiculo {
 
     public Double velocidad;
 
