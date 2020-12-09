@@ -37,8 +37,10 @@ public class FuerzaArmada {
 	}
 
 	public Boolean enviarALaBatalla(String nombre, Integer codigoIdentificador) throws VehiculoInexistente, VehiculoIncompatible {
-		if(!(convoy.contains(codigoIdentificador))){
-			throw new VehiculoInexistente();
+		for(Vehiculo v: convoy){
+			if(!(v.getCodigoIdentificador().equals(convoy.contains(codigoIdentificador)))){
+				throw new VehiculoInexistente();
+			}
 		}
 		switch (batallas.get(nombre).getTipo()){
 			case AEREA:
