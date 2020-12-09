@@ -37,7 +37,7 @@ public class FuerzaArmada {
 	}
 
 	public Boolean enviarALaBatalla(String nombre, Integer codigoIdentificador) throws VehiculoInexistente, VehiculoIncompatible {
-		if (!(convoy.contains(codigoIdentificador))){
+		if(!(convoy.contains(codigoIdentificador))){
 			throw new VehiculoInexistente();
 		}
 		switch (batallas.get(nombre).getTipo()){
