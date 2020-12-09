@@ -1,9 +1,10 @@
 package ar.edu.unlam.pb2.eva03;
 
+import interfaces.IAcuatico;
 import interfaces.ITerrestre;
 import interfaces.IVolador;
 
-public class HidroAvion extends Vehiculo implements ITerrestre, IVolador {
+public class HidroAvion extends Vehiculo implements IAcuatico, IVolador {
 
     public Double altura;
     public Double profundidad;
