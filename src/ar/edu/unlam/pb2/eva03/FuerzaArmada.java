@@ -60,6 +60,7 @@ public class FuerzaArmada {
 					throw new VehiculoIncompatible();
 				}
 		}
+
 		return true;
 	}
 }
