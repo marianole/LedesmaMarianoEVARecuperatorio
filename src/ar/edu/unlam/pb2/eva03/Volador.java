@@ -6,6 +6,7 @@ public class Volador extends Vehiculo {
 
     public Volador(Integer codigoIdentificador, String nombre) {
         super(codigoIdentificador, nombre);
+        altura=0.0;
     }
 
     public Double getAltura() {

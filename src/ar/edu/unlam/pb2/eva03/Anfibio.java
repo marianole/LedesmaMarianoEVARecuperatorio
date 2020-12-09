@@ -10,6 +10,8 @@ public class Anfibio extends Vehiculo implements IAcuatico, ITerrestre {
 
     public Anfibio(Integer codigoIdentificador, String nombre) {
         super(codigoIdentificador, nombre);
+        velocidad=0.0;
+        profundidad=0.0;
     }
 
     public Double getVelocidad() {

@@ -6,6 +6,7 @@ public class Acuatico extends Vehiculo {
 
     public Acuatico(Integer codigoIdentificador, String nombre) {
         super(codigoIdentificador, nombre);
+        profundidad=0.0;
     }
 
     public Double getProfundidad() {

@@ -20,6 +20,7 @@ public class Batalla {
 		vehiculosEnLaBatalla= new HashSet<Vehiculo>();
 	}
 
+	/*constructor agregado por mi*/
 	public Batalla(String nombre, Double latitud, Double longitud) {
 		this.nombre = nombre;
 		this.latitud = latitud;
@@ -49,5 +50,9 @@ public class Batalla {
 
 	public void setTipo(TipoDeBatalla tipo) {
 		this.tipo = tipo;
+	}
+
+	public void agregarVehiculoABatalla(Vehiculo vehiculo){
+		vehiculosEnLaBatalla.add(vehiculo);
 	}
 }

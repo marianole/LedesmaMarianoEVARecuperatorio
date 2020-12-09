@@ -31,7 +31,7 @@ public class Vehiculo {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Vehiculo)) return false;
         Vehiculo vehiculo = (Vehiculo) o;
         return codigoIdentificador.equals(vehiculo.codigoIdentificador);
     }

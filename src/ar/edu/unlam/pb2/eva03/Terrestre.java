@@ -6,6 +6,7 @@ public class Terrestre extends Vehiculo {
 
     public Terrestre(Integer codigoIdentificador, String nombre) {
         super(codigoIdentificador, nombre);
+        velocidad=0.0;
     }
 
     public Double getVelocidad() {

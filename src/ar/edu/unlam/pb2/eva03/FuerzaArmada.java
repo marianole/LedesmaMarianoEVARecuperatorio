@@ -36,7 +36,7 @@ public class FuerzaArmada {
 		return batallas.get(nombreBatalla);
 	}
 
-	public Boolean enviarALaBatalla(String nombre, Integer codigoIdentificador) throws VehiculoInexistente {
+	public Boolean enviarALaBatalla(String nombre, Integer codigoIdentificador) throws VehiculoInexistente, VehiculoIncompatible {
 		if (!(convoy.contains(codigoIdentificador))){
 			throw new VehiculoInexistente();
 		}
@@ -44,19 +44,22 @@ public class FuerzaArmada {
 			case AEREA:
 				if (convoy instanceof IVolador){
 					return true;
+				}else{
+					throw new VehiculoIncompatible();
 				}
-				break;
 			case NAVAL:
 				if (convoy instanceof IAcuatico){
 					return true;
+				} else{
+					throw new VehiculoIncompatible();
 				}
-				break;
 			case TERRESTRE:
 				if (convoy instanceof ITerrestre){
 					return true;
+				}else{
+					throw new VehiculoIncompatible();
 				}
-				break;
 		}
-		return false;
+		return true;
 	}
 }

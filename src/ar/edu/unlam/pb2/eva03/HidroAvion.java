@@ -11,6 +11,8 @@ public class HidroAvion extends Vehiculo implements IAcuatico, IVolador {
 
     public HidroAvion(Integer codigoIdentificador, String nombre) {
         super(codigoIdentificador, nombre);
+        altura=0.0;
+        profundidad=0.0;
     }
 
     public Double getAltura() {
